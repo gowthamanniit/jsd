@@ -1,0 +1,57 @@
+User defined exception: or custom exception
+============================================
+
+we can create own exception.
+
+ex:
+	AgeException
+
+
+class AgeExcep
+{
+	AgeExcep()
+	{
+	System.out.println("Enter Age:");
+	int age=scan.nextInt();
+	if (age>=18)
+		syso("age eligible to vote")
+	else
+		try{
+		throw new Exception("not eligible to vote");
+		}
+		catch(Exception e)
+		{
+		Syso(" error : "+e.toString());
+		new AgeExcep()
+		}
+	}
+}	
+
+type casting:
+---------------
+	convert one datatype to another datatype.
+2 types:
+	datatype casting
+		- implicit (auto conversion) ex: higher bits = lower bits
+		- explicit (user manual conversion) ex: lowerbit = higer bits
+							
+	object casting
+		- upcasting	base = derive
+		- downcasting   derive = base
+
+regular expression:
+===================
+	
+	definition: to check given input is valid or invalid format.
+
+
+	note: regular expression is string format.
+
+	inbuilt class:
+	Pattern
+	Matcher
+
+	header file:
+	import java.util.regex.Pattern;
+	import java.util.regex.Matcher;
+

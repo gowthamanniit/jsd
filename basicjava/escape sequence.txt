@@ -1,0 +1,15 @@
+escape sequence: or format specifier
+================
+
+purpose: to alignment purpose
+
+
+\n		---> cursor moves to new line
+\t		---> tab space
+\b		---> backspace
+\0		---> null char
+\r		---> overwritten
+\"		---> double quotes
+\'		---> single quotes
+\\		---> single slash
+
