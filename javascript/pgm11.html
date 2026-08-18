@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+            function show()
+            {
+                var sname=document.getElementById("t1").value;
+                switch(sname)
+                {
+                    case "ccet":
+                        document.getElementById("myimg").src="./images/ccet.jpg";
+                        break;
+                    case "gcec":
+                        document.getElementById("myimg").src="./images/gcec.jpg";
+                        break;
+                    case "mkce":
+                        document.getElementById("myimg").src="./images/mkce.jpg";
+                        break;
+                    case "svc":
+                        document.getElementById("myimg").src="./images/svc.jpg";
+                        break;
+                    default:
+                        document.getElementById("myimg").src="./images/eyeclose.png";
+
+
+                }
+            }
+    </script>
+</head>
+<body>
+    <input id="t1" type="text" placeholder="Enter Your Name:" onblur="show()">
+    <br>
+    <img src="" id="myimg" width="80%" align="center">
+
+</body>
+</html>
