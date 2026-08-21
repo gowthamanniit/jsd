@@ -12,13 +12,55 @@
 
             for(var i=0;i<size;i++)
         {
-            arr[i]=prompt("enter array value at index:"+i);
+            arr[i]=parseInt(prompt("enter array value at index:"+i));
         }
             
             for(var i=0;i<size;i++)
         {
             document.write("<br> value "+i+" = "+arr[i]);
         }
+        
+         // find highest
+         var big=arr[0];
+
+         for(var i=1;i<size;i++)
+         {
+            if(big<arr[i])
+            big=arr[i];
+         }
+         document.write("<br>Biggest number:"+big);
+         // SUM OF EVEN IN AN ARRAY
+         var esum=0;
+         var codd=0;
+         for(var i=0;i<size;i++)
+         {
+            if(arr[i]%2===0)
+            esum=esum+arr[i];
+        else
+            codd++;
+         }
+
+                document.write("<br>sum of even numbers:"+esum);
+                document.write("<br>count of odd numbers:"+codd);
+         // ascending order
+         var temp=0;
+         for(var i=0;i<size;i++)
+         {
+            for(var j=i+1; j<size; j++)
+            {
+                    if(arr[i]>arr[j])
+                    {
+                        temp=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=temp;
+                    }
+            }
+         }
+         for(var i=0;i<size;i++)
+        {
+            document.write("<br> value "+i+" = "+arr[i]);
+        }
+
         }
     </script>
 </head>

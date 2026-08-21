@@ -1,4 +1,72 @@
 import React from 'react'
+function App() {
+  var stud={
+    sno:1001,
+    sname:'gowthaman',
+    marks:{tamil:99,
+          english:40,
+          maths:100,
+          science:88,
+          social:68
+    },
+    rank:2,
+    result:"pass"             
+  }
+  return (
+    <div>
+      <h1>JSON</h1>
+      <h2>student number:{stud.sno}</h2>
+      <h2>student name:{stud.sname}</h2>
+      <h2>student tamil mark:{stud.marks["tamil"]}</h2>
+      <h2>student english mark:{stud.marks['english']}</h2>
+      <h2>student maths mark:{stud.marks.maths}</h2>
+      <h2>student science mark:{stud.marks.science}</h2>
+      <h2>student social mark:{stud.marks["social"]}</h2>
+      <h2>student rank:{stud.rank}</h2>
+      <h2>student result:{stud.result}</h2>
+    </div>
+  )
+}
+
+export default App
+
+/*
+import React from 'react'
+
+function App() {
+
+  var arr=[11,22,33,44,55,66,77,88,-99,110,112,334,56,19,13];
+  var big=arr[0];
+  return (
+    <div>
+        <h1>Array Demo</h1>
+        
+        {arr.map((item)=>item)}
+        <br></br>
+        
+        {arr.map((item)=><>{item} </>)}
+        
+        {arr.map((item)=><><br></br>{item}</>)}
+        
+        <ol type="A">
+        {arr.map((v)=><li>{v}</li>)}
+        </ol>
+
+        
+
+        <div style={{display:"none" }}>
+        {arr.map((v)=><>{big>v && <>{big=v}</>}</>)}
+        </div>
+
+      <h1>Biggest number:{big}</h1>
+    </div>
+  )
+}
+
+export default App
+
+/*
+import React from 'react'
 
 function App() {
 
