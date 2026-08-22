@@ -1,4 +1,86 @@
 import React from 'react'
+function App(props) {
+  return (
+    <div>
+      <h1>Json with Array Handling and also check null</h1>    
+      <h2>Roll number:{props.data.rno}</h2>
+      <h2>Name:{props.data.sname}</h2>
+      <h2>mark 1:{props.data.marks[0]}</h2>
+      <h2>mark 2:{props.data.marks[1]}</h2>
+      <h2>mark 3:{props.data.marks[2]}</h2>
+      <h3>Result:{(props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"PASS":"FAIL"}</h3>
+    <h1>================additionl(smart way)==============</h1>
+
+    </div>
+  )
+}
+
+export default App
+
+/*
+import React from 'react'
+
+export default function App(props) {
+  var arr=[]
+  for(var k in props.data)
+  {    
+    arr.push(k)    
+  }
+
+  return (
+    <div>
+      <h1>Props using JSON data</h1>
+      <h2>Roll Number:{props.data.rno}</h2>    
+      <h2>Student name:{props.data.sname}</h2>    
+      
+      <h2>Mark:{props.data.mark}</h2>    
+      <h2>Result:{props.data.mark>=35?"pass":"fail"}</h2>    
+      <h2>is eligible to study:{props.data.iseligible?"eligible":"not eligible"}</h2>    
+
+      <br></br>
+      <h2>======================================================</h2>
+      {arr.map((v)=><h2>{v}----&gt; {props.data[v]}</h2>)}
+      <h2>=================extra learners==================</h2>
+      {arr.map((v)=><h2>{v}----&gt; {(props.data[v]===true && "Eligible") || (props.data[v]===false && "Not Eligible") || props.data[v]}</h2>)}
+    </div>
+  )
+}
+
+/*
+import React from 'react'
+
+function App(props) {
+  return (
+    <div>
+      <h1>Props using Array</h1>
+      
+      Test first mark:{props.data[0]}      
+      <br></br>
+
+      {props.data.map((item,index)=><><br></br>mark:{index+1} = {item}</>)}
+    </div>
+  )
+}
+
+export default App
+
+/*
+import React from 'react'
+function App(props) {
+
+  return (    
+    <div>
+      <h1>props: properties</h1>
+      <h2>share data from one component to another component</h2>
+      <h2>Your Name:{props.data}</h2>
+    </div>
+  )
+}
+
+export default App
+
+/*
+import React from 'react'
 function App() {
   var stud={
     sno:1001,
