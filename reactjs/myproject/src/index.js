@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 var stud={
   rno:1001,
   sname:"haiban",
-  marks:[99,34,99],
+  marks:[99,36,99],
   result:null
 }
 
