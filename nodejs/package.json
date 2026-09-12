@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
     "http": "^0.0.1-security"
   }
 }
